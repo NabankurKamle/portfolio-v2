@@ -1,0 +1,46 @@
+# Spatial UI System
+
+A component architecture built around the principle that interfaces should have genuine spatial depth — not as visual decoration, but as a communication layer.
+
+## The Problem
+
+Most design systems treat components as isolated units. They're composed correctly, but they don't exist in relationship to each other spatially. The result is interfaces that feel flat regardless of how much visual polish is applied.
+
+## The Architecture
+
+The system is built on three foundational layers:
+
+**Token layer** — A semantic token system that maps raw values to contextual roles. Colors don't describe themselves (blue-500), they describe their function (surface-elevated, border-interactive).
+
+**Depth layer** — A spatial hierarchy system where every surface has an assigned elevation. Elevation affects blur density, shadow intensity, border opacity, and background color — all derived from a single `elevation` prop.
+
+**Motion layer** — A choreography system that coordinates entrance and exit animations across components. Components don't animate in isolation — they participate in a shared spatial narrative.
+
+## Key Technical Decisions
+
+### Glass Architecture
+
+Glassmorphism used architecturally rather than decoratively. Each surface renders at a specific backdrop-blur density corresponding to its elevation level. Higher elevation = more blur separation from the layer below.
+
+```tsx
+// Elevation drives all visual properties
+<Surface elevation={2}>
+  <Surface elevation={3}>
+    Correct spatial nesting
+  </Surface>
+</Surface>
+```
+
+### Motion Choreography
+
+Framer Motion's `AnimatePresence` and `layoutId` handle shared element transitions. The system defines motion presets rather than individual durations, ensuring consistent timing across the entire interface.
+
+### Bundle Strategy
+
+Tree-shaken component exports, dynamic imports for heavy features, and a strict 4kb per-component budget (excluding peer deps).
+
+## Outcomes
+
+- **38% reduction** in bundle size vs previous system
+- **120+ components** all passing accessibility audits
+- **6 product teams** adopted within 3 months of launch
