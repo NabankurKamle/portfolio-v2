@@ -1,15 +1,5 @@
 "use client";
 
-/**
- * Fix #4 — Hydration mismatch
- *
- * Root causes:
- *  1. `typeof window !== 'undefined'` guard returned different JSX on
- *     server vs client → replaced with `mounted` state + useEffect.
- *  2. Motion values were initialised to 0 on server but cursor position
- *     is only meaningful on the client → wrapped in ClientOnly pattern.
- */
-
 import { useEffect, useState } from "react";
 import { motion, useSpring, useMotionValue } from "framer-motion";
 import { useCursorStore } from "@/hooks/useCursor";
