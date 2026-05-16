@@ -98,7 +98,7 @@ function ProjectCard({ project }: { project: Project }) {
                     </div>
 
                     {/* Hover accent */}
-                    <m.div className="absolute left-1 top-0 bottom-0 w-px"
+                    <m.div className="absolute -left-4 md:left-1 top-0 bottom-0 w-px"
                         initial={{ scaleY: 0, opacity: 0 }}
                         animate={{ scaleY: hovered ? 1 : 0, opacity: hovered ? 1 : 0 }}
                         transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}

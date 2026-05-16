@@ -101,7 +101,7 @@ export function Hero({ id }: { id: string }) {
                     <m.div
                         initial={{ opacity: 0 }} animate={{ opacity: 1 }}
                         transition={{ duration: 1, ease: EASE, delay: 1.1 }}
-                        className="flex items-center gap-6 mt-16"
+                        className="flex flex-wrap  items-center gap-6 mt-16"
                     >
                         <span className="divider w-8 flex-shrink-0" />
                         {socialLinks.map((s) => (

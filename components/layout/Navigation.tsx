@@ -34,7 +34,7 @@ export function Navigation() {
                 <div
                     className={cn(
                         "mx-auto my-4 h-14 rounded-2xl px-5 transition-all duration-500",
-                        "grid grid-cols-2 md:grid-cols-[1fr_auto_1fr] items-center",
+                        "grid grid-cols-2 md:grid-cols-[1fr_auto_1fr] items-center backdrop-blur-sm",
                         scrolled
                             ? "glass max-w-2xl shadow-glass"
                             : "bg-transparent max-w-5xl"
@@ -129,7 +129,7 @@ export function Navigation() {
                     <m.div
                         initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }}
                         transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
-                        className="fixed top-24 left-4 right-4 z-40 glass rounded-2xl p-6"
+                        className="fixed top-24 left-4 right-4 z-40 glass rounded-2xl p-6 backdrop-blur-sm"
                     >
                         <nav className="flex flex-col gap-4">
                             {navLinks.map((link, i) => (

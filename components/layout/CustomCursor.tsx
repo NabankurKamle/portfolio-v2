@@ -37,7 +37,7 @@ function CursorInner() {
 
     return (
         <div
-            className="fixed inset-0 pointer-events-none"
+            className="hidden md:block fixed inset-0 pointer-events-none"
             style={{ zIndex: 9999 }}
             aria-hidden="true"
         >

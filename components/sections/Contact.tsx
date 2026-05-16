@@ -113,7 +113,7 @@ export function Contact({ id }: { id: string }) {
                         </div>
 
                         {/* Center — socials */}
-                        <div className="flex items-center gap-6">
+                        <div className="flex flex-wrap items-center gap-6">
                             {socialLinks.map((s) => (
                                 <a
                                     key={s.label}
