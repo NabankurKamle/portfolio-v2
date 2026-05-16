@@ -53,35 +53,8 @@ export const socialLinks: SocialLink[] = [
 // ─── Projects ────────────────────────────────────────────────────────
 export const projects: Project[] = [
     {
-        id: "astrava",
-        index: "01",
-        title: "Astrava",
-        subtitle: "Cinematic productivity platform",
-        description:
-            "An immersive productivity and focus platform centered around deep work, atmospheric interaction design, cinematic motion systems, and scalable premium UI architecture with strong emphasis on visual rhythm and user experience.",
-        tags: [
-            "Next.js",
-            "TypeScript",
-            "Framer Motion",
-            "Tailwind CSS",
-            "Zustand",
-        ],
-        year: "2026",
-        status: "WIP",
-        link: "https://example.com",
-        github: "https://github.com/yourusername",
-        featured: true,
-        color: "#8aaeff",
-        metrics: [
-            { label: "Motion systems", value: "25+" },
-            { label: "Reusable components", value: "80+" },
-            { label: "Design iterations", value: "120+" },
-        ],
-    },
-
-    {
         id: "317am",
-        index: "02",
+        index: "01",
         title: "3:17AM - Midnight Archive",
         subtitle: "Late-night creative experience",
         description:
@@ -111,7 +84,7 @@ export const projects: Project[] = [
 
     {
         id: "pctflex",
-        index: "03",
+        index: "02",
         title: "PCT FLEX",
         subtitle: "Enterprise manufacturing ecosystem",
         description:
@@ -140,7 +113,7 @@ export const projects: Project[] = [
 
     {
         id: "waxcraft",
-        index: "04",
+        index: "03",
         title: "WaxCraft",
         subtitle: "Jewellery manufacturing management software",
         description:
@@ -157,7 +130,7 @@ export const projects: Project[] = [
         status: "Production",
         link: "https://waxcraft.prioritysolutions.in",
         github: "",
-        featured: false,
+        featured: true,
         color: "#f59e0b",
         metrics: [
             { label: "Production workflows", value: "20+" },
@@ -168,7 +141,7 @@ export const projects: Project[] = [
 
     {
         id: "chilloptix",
-        index: "05",
+        index: "04",
         title: "ChillOptix",
         subtitle: "Cold storage management platform",
         description:
@@ -196,7 +169,7 @@ export const projects: Project[] = [
 
     {
         id: "priobank",
-        index: "06",
+        index: "05",
         title: "PrioBank",
         subtitle: "Cooperative banking management system",
         description:

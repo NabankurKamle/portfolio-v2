@@ -77,7 +77,7 @@ function ProjectCard({ project }: { project: Project }) {
                         </div>
 
                         {/* Links */}
-                        <div className="flex lg:flex-col items-start lg:items-end gap-3 pt-1">
+                        <div className="flex lg:flex-col items-start lg:items-end gap-3 pt-4 lg:pt-1">
                             {project.link && (
                                 <m.a href={project.link} target="_blank" rel="noopener noreferrer"
                                     animate={{ opacity: hovered ? 1 : 0.4 }} transition={{ duration: 0.3 }}
