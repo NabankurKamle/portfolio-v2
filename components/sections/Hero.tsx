@@ -55,7 +55,7 @@ export function Hero({ id }: { id: string }) {
                     {/* Headline */}
                     <div className="mb-8 overflow-hidden">
                         <h1 className="text-hero font-sans font-[500] text-[var(--text-primary)] leading-[0.9] tracking-[-0.05em]">
-                            {["Frontend", "Engineer."].map((w, i) => (
+                            {["Software", "Engineer."].map((w, i) => (
                                 <span key={w} className="block overflow-hidden">
                                     <Word word={w} delay={0.3 + i * 0.12} />
                                 </span>
